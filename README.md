@@ -25,9 +25,9 @@ An easy to set up and use SSH honeypot, a fake SSH server that lets anyone in an
 ### From source
 
 ```
-$ git clone https://github.com/jaksi/sshesame.git
-$ cd sshesame
-$ go build
+git clone https://github.com/jaksi/sshesame.git
+cd sshesame
+go build
 ```
 
 ### GitHub releases
@@ -57,11 +57,11 @@ Images for amd64, arm64 and armv7 are built and published automatically and are 
 #### CLI
 
 ```
-$ docker run -it --rm\
-    -p 127.0.0.1:2022:2022\
-    -v sshesame-data:/data\
-    [-v $PWD/sshesame.yaml:/config.yaml]\
-    ghcr.io/jaksi/sshesame
+docker run -it --rm\
+  -p 127.0.0.1:2022:2022\
+  -v sshesame-data:/data\
+  [-v $PWD/sshesame.yaml:/config.yaml]\
+  ghcr.io/jaksi/sshesame
 ```
 
 #### Dockerfile
